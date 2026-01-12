@@ -3,405 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentic Only - Luxury Authentication Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
-    <link rel="stylesheet" href="luxury-colors.css">
+    <title>Authentic Only - Luxury Outlet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Side Menu Overlay -->
-    <div class="luxury-side-menu-overlay" id="sideMenuOverlay"></div>
-
-    <!-- Side Menu -->
-    <div class="luxury-side-menu" id="sideMenu">
-        <div class="luxury-menu-header">
-            <h2>More Options</h2>
-            <button class="luxury-close-menu" id="closeMenu">&times;</button>
-        </div>
-
-        <div class="luxury-accordion">
-            <div class="luxury-accordion-item">
-                <button class="luxury-accordion-header" data-target="client-services">
-                    <span>Client Services</span>
-                    <span class="luxury-accordion-arrow">▶</span>
-                </button>
-                <div class="luxury-accordion-content" id="client-services">
-                    <ul class="luxury-menu-links">
-                        <li><a href="#personal-shopping">Personal Shopping Consultation</a></li>
-                        <li><a href="#authentication">Authentication Services</a></li>
-                        <li><a href="#care-repair">Care & Repair</a></li>
-                        <li><a href="#gift-wrapping">Gift Wrapping</a></li>
-                    </ul>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-full">Authentic Only</h1>
+                <span class="logo-mobile">AO</span>
+                <p>Members Only</p>
             </div>
-
-            <div class="luxury-accordion-item">
-                <button class="luxury-accordion-header" data-target="about-us">
-                    <span>About Us</span>
-                    <span class="luxury-accordion-arrow">▶</span>
-                </button>
-                <div class="luxury-accordion-content" id="about-us">
-                    <ul class="luxury-menu-links">
-                        <li><a href="#story">Our Story & Heritage</a></li>
-                        <li><a href="#sustainability">Sustainability</a></li>
-                        <li><a href="#press">Press & Media</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                    </ul>
-                </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Search...">
             </div>
-
-            <div class="luxury-accordion-item">
-                <button class="luxury-accordion-header" data-target="support">
-                    <span>Support</span>
-                    <span class="luxury-accordion-arrow">▶</span>
-                </button>
-                <div class="luxury-accordion-content" id="support">
-                    <ul class="luxury-menu-links">
-                        <li><a href="#shipping">Shipping Information</a></li>
-                        <li><a href="#returns">Returns & Warranty</a></li>
-                        <li><a href="#size-guide">Size Guide</a></li>
-                        <li><a href="#contact">Contact Luxury Advisors</a></li>
-                    </ul>
-                    <div class="support-contacts">
-                        <p>📧 Email: support@authenticonly.com</p>
-                        <p>📞 Phone: +1 (888) AUTH-LUX</p>
-                        <p>📱 Instagram: @AuthenticOnly</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="luxury-accordion-item">
-                <button class="luxury-accordion-header" data-target="legal">
-                    <span>Legal</span>
-                    <span class="luxury-accordion-arrow">▶</span>
-                </button>
-                <div class="luxury-accordion-content" id="legal">
-                    <ul class="luxury-menu-links">
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                        <li><a href="#guarantee">Authentication Guarantee</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <header>
-        <div class="logo">
-            <h1>Authentic Only</h1>
-            <span class="members-badge">Members Only</span>
-        </div>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav role="navigation" aria-label="Main navigation">
-            <ul>
-                <li class="dropdown mega-dropdown">
-                    <a href="#brands" aria-haspopup="true" aria-expanded="false">BRANDS</a>
-                    <div class="dropdown-content mega-menu">
-                        <div class="mega-menu-content">
-                            <div class="brands-grid">
-                                <div class="brand-item" data-brand="loro-piana">
-                                    <div class="brand-info">
-                                        <h4>Loro Piana</h4>
-                                        <p>The Epitome of Quiet Luxury</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <img src="https://via.placeholder.com/200x150?text=Loro+Piana" alt="Loro Piana Lifestyle" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="brand-item" data-brand="brunello-cucinelli">
-                                    <div class="brand-info">
-                                        <h4>Brunello Cucinelli</h4>
-                                        <p>Humanistic Cashmere</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <img src="https://via.placeholder.com/200x150?text=Brunello+Cucinelli" alt="Brunello Cucinelli Lifestyle" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="brand-item" data-brand="tom-ford">
-                                    <div class="brand-info">
-                                        <h4>Tom Ford</h4>
-                                        <p>Glamorous Streetwear</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <img src="https://via.placeholder.com/200x150?text=Tom+Ford" alt="Tom Ford Lifestyle" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="brand-item" data-brand="boss">
-                                    <div class="brand-info">
-                                        <h4>BOSS</h4>
-                                        <p>Modern Power Casual</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <img src="https://via.placeholder.com/200x150?text=BOSS" alt="BOSS Lifestyle" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="brand-item" data-brand="tommy-hilfiger">
-                                    <div class="brand-info">
-                                        <h4>Tommy Hilfiger</h4>
-                                        <p>Classic American Cool</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <img src="https://via.placeholder.com/200x150?text=Tommy+Hilfiger" alt="Tommy Hilfiger Lifestyle" loading="lazy">
-                                    </div>
-                                </div>
-                                <div class="brand-item view-all">
-                                    <div class="brand-info">
-                                        <h4>View All Brands</h4>
-                                        <p>Explore our complete collection</p>
-                                    </div>
-                                    <div class="brand-image">
-                                        <div class="view-all-icon">
-                                            <i class="ri-arrow-right-line"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown mega-dropdown">
-                    <a href="#clothing" aria-haspopup="true" aria-expanded="false">CLOTHING</a>
-                    <div class="dropdown-content mega-menu">
-                        <div class="mega-menu-content">
-                            <div class="clothing-grid">
-                                <div class="clothing-category">
-                                    <h4>TOPS & KNITWEAR</h4>
-                                    <ul>
-                                        <li><a href="#t-shirts">T-Shirts & Polos</a></li>
-                                        <li><a href="#sweatshirts">Sweatshirts & Crewnecks</a></li>
-                                        <li><a href="#sweaters">Sweaters & Knitwear</a></li>
-                                        <li><a href="#shirts">Shirts</a></li>
-                                    </ul>
-                                </div>
-                                <div class="clothing-category">
-                                    <h4>BOTTOMS</h4>
-                                    <ul>
-                                        <li><a href="#jeans">Jeans</a></li>
-                                        <li><a href="#trousers">Trousers</a></li>
-                                        <li><a href="#sweatpants">Sweatpants</a></li>
-                                        <li><a href="#shorts">Shorts</a></li>
-                                    </ul>
-                                </div>
-                                <div class="clothing-category">
-                                    <h4>OUTERWEAR</h4>
-                                    <ul>
-                                        <li><a href="#jackets">Jackets & Blazers</a></li>
-                                        <li><a href="#puffers">Puffer Jackets & Coats</a></li>
-                                        <li><a href="#hoodies">Hoodies & Zip-Ups</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#accessories" aria-haspopup="true" aria-expanded="false">ACCESSORIES</a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="#bags">Bags & Backpacks</a></li>
-                            <li><a href="#belts">Belts</a></li>
-                            <li><a href="#hats">Hats & Beanies</a></li>
-                            <li><a href="#socks">Socks</a></li>
-                            <li class="view-all"><a href="#all-accessories">View All Accessories</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#the-edit" aria-haspopup="true" aria-expanded="false">THE EDIT</a>
-                    <div class="dropdown-content edit-content">
-                        <ul>
-                            <li><a href="#capsule-wardrobe">The Capsule Wardrobe <span class="edit-desc">Essential pieces for modern elegance</span></a></li>
-                            <li><a href="#loro-piana-summer">Loro Piana Summer Walk <span class="edit-desc">Lightweight luxury for coastal living</span></a></li>
-                            <li><a href="#brunello-lifestyle">The Brunello Cucinelli Lifestyle <span class="edit-desc">Timeless Italian craftsmanship</span></a></li>
-                            <li><a href="#tom-ford-evening">Tom Ford Evening Casual <span class="edit-desc">Sophisticated urban sophistication</span></a></li>
-                            <li><a href="#new-arrivals">New Arrivals <span class="edit-desc">Fresh from the ateliers</span></a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#new-arrivals">NEW ARRIVALS</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="search-bar">
-                <input type="text" placeholder="Search luxury items..." aria-label="Search">
-                <i class="ri-search-line" aria-hidden="true"></i>
+            <div class="header-actions">
+                <a href="#" class="search"><i class="fas fa-search"></i></a>
+                <a href="#" class="login"><i class="fas fa-user"></i> Login</a>
+                <a href="#" class="cart"><i class="fas fa-shopping-bag"></i></a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="hero-section">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <h1>AUTHENTIC ONLY</h1>
-                    <p class="subheadline">Where Luxury Meets Verification</p>
-                    <button class="cta-button">Explore Collections</button>
+    <div class="menu-overlay">
+        <div class="menu-content">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="login">Login</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>
+                <span class="hero-title-main">Authentic</span><br>
+                <span class="hero-title-gold gold">Luxury.</span><br>
+                <span class="hero-subtitle">Outlet Prices.</span>
+            </h1>
+            <p class="hero-subtext">Your VIP Access to Designer Fashion in Lebanon.</p>
+            <a href="#" class="cta-button cta-btn">Explore New Arrivals</a>
+            <div class="hero-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-brands">
+        <div class="container">
+            <h2 class="section-title">Top Brands</h2>
+            <div class="brands-container">
+                <button class="chevron left"><i class="fas fa-chevron-left"></i></button>
+                <div class="brands-list">
+                    <div class="brand-item">Balenciaga</div>
+                    <div class="brand-item">Michael Kors (MK)</div>
+                    <div class="brand-item">Nike</div>
+                    <div class="brand-item">Zara</div>
+                    <div class="brand-item">Tommy Hilfiger</div>
                 </div>
-                <div class="hero-right">
-                    <div class="product-showcase">
-                        <img src="https://via.placeholder.com/400x400?text=Luxury+Product" alt="Luxury Product" class="product-image">
-                        <div class="verification-badge">
-                            <i class="ri-check-line"></i>
-                            Verified Authentic
-                        </div>
+                <button class="chevron right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-category">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-cards">
+                <div class="category-card">
+                    <img src="images/category-men.jpg" alt="Men">
+                    <div class="category-overlay">
+                        <h3>Men</h3>
                     </div>
                 </div>
-            </div>
-            <div class="trust-bar">
-                <div class="trust-item">
-                    <i class="ri-check-line"></i>
-                    100% Authentic
+                <div class="category-card">
+                    <img src="images/category-women.jpg" alt="Women">
+                    <div class="category-overlay">
+                        <h3>Women</h3>
+                    </div>
                 </div>
-                <div class="trust-item">
-                    <i class="ri-check-line"></i>
-                    Expert Verified
-                </div>
-                <div class="trust-item">
-                    <i class="ri-check-line"></i>
-                    Lifetime Warranty
+                <div class="category-card">
+                    <img src="images/category-accessories.jpg" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <section class="curated-collection">
-            <div class="collection-container">
-                <h2>Curated Collection</h2>
-                <div class="collection-grid">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Watch" alt="Luxury Watch">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Elegant Timepiece</h3>
-                        <p class="product-price">$2,500</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Handbag" alt="Designer Handbag">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Signature Clutch</h3>
-                        <p class="product-price">$1,800</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Jewelry" alt="Luxury Jewelry">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Diamond Necklace</h3>
-                        <p class="product-price">$5,000</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Shoes" alt="Designer Shoes">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Couture Heels</h3>
-                        <p class="product-price">$950</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Scarf" alt="Luxury Scarf">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Silk Scarf</h3>
-                        <p class="product-price">$350</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://via.placeholder.com/250x250?text=Sunglasses" alt="Designer Sunglasses">
-                            <div class="verified-badge">
-                                <i class="ri-check-line"></i>
-                                VERIFIED
-                            </div>
-                        </div>
-                        <h3 class="product-name">Aviator Shades</h3>
-                        <p class="product-price">$600</p>
-                        <button class="auth-button">View Authentication</button>
-                    </div>
+    <section class="weekly-drop">
+        <div class="container">
+            <h2 class="section-title">This Week's Drop</h2>
+            <p class="section-subtitle">New Arrivals</p>
+            <div class="drop-cards">
+                <div class="drop-card">
+                    <img src="images/drop-1.jpg" alt="Nike Air Max Sneakers">
+                    <span class="badge hot">Hot</span>
+                    <h3>Nike Air Max Sneakers</h3>
+                    <p class="price">$89</p>
+                </div>
+                <div class="drop-card">
+                    <img src="images/drop-2.jpg" alt="Guess Black Dress">
+                    <span class="badge hot">Hot</span>
+                    <h3>Guess Black Dress</h3>
+                    <p class="price">$120</p>
+                </div>
+                <div class="drop-card">
+                    <img src="images/drop-3.jpg" alt="Zara Denim Jacket">
+                    <span class="badge hot">Hot</span>
+                    <h3>Zara Denim Jacket</h3>
+                    <p class="price">$65</p>
+                </div>
+                <div class="drop-card">
+                    <img src="images/drop-4.jpg" alt="MK Logo Bag">
+                    <span class="badge new">New</span>
+                    <h3>MK Logo Bag</h3>
+                    <p class="price">$110</p>
                 </div>
             </div>
-        </section>
+            <a href="#" class="view-all-button">View All</a>
+        </div>
+    </section>
 
-        <section class="verification-process">
-            <div class="process-container">
-                <h2>Our Authentication Process</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <i class="ri-shopping-bag-line"></i>
-                        <h3>Acquisition</h3>
-                        <p>We carefully acquire authentic luxury items from trusted sources worldwide.</p>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <i class="ri-search-line"></i>
-                        <h3>Examination</h3>
-                        <p>Expert artisans examine each piece for authenticity, quality, and craftsmanship.</p>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <i class="ri-check-line"></i>
-                        <h3>Certification</h3>
-                        <p>Certified with our proprietary verification seal and blockchain-backed documentation.</p>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <i class="ri-truck-line"></i>
-                        <h3>Delivery</h3>
-                        <p>Secure delivery with full authentication guarantee and lifetime warranty.</p>
-                    </div>
+    <section class="why-shop">
+        <div class="container">
+            <h2 class="section-title">Why Shop With Us</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>1 Day Exchange</h3>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Cash on Delivery</h3>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>100% Authentic Brands</h3>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-store"></i>
+                    <h3>Sourced from Official Outlets</h3>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div class="social-media">
-            <a href="#facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#instagram"><i class="ri-instagram-fill"></i></a>
-            <a href="#twitter"><i class="ri-twitter-fill"></i></a>
-        </div>
-        <div class="policies">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#contact">Contact Us</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script src="luxury-interactions.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
